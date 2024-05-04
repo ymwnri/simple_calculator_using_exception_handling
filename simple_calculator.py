@@ -16,3 +16,16 @@ try:
             print("Choose within the four operation. Please try again.")
             continue
 
+        # Ask user for two numbers
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        # Perform the operation
+        if get_operation == 'add':
+            print(f"Sum: {num1 + num2}")
+        elif get_operation == 'subtract':
+            print(f"Difference: {num1 - num2}")
+        elif get_operation == 'multiply':
+            print(f"Product: {num1 * num2}")
+        elif get_operation == 'divide':
+            print(f"Quotient: {num1 / num2}")
