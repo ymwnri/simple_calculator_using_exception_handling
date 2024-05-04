@@ -35,3 +35,19 @@ try:
 
         if get_continue.lower() != 'Y':
             break
+
+# Check if the input is a number using ValueError
+except ValueError:
+    print("Enter a number. Please try again.")
+
+# Check if the input is zero using ZeroDivisionError
+except ZeroDivisionError:
+    print("Cannot divide by zero. Please try again.")
+
+# Check if user does not input anything using EOFError
+except EOFError:
+    print("Please input a number. Please try again.")
+
+# Catch all other exceptions
+except:
+    print("An error occurred. Please try again.")
