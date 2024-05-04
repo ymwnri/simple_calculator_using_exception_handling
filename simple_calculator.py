@@ -51,3 +51,7 @@ except EOFError:
 # Catch all other exceptions
 except:
     print("An error occurred. Please try again.")
+
+# Finally block to print a message
+finally:
+    print("Exiting the program. Thank you for using the calculator.")
