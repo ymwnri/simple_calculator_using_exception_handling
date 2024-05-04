@@ -29,3 +29,9 @@ try:
             print(f"Product: {num1 * num2}")
         elif get_operation == 'divide':
             print(f"Quotient: {num1 / num2}")
+
+        # Ask user if they want to continue
+        get_continue = input("Do you want to continue? (Y/N): ")
+
+        if get_continue.lower() != 'Y':
+            break
