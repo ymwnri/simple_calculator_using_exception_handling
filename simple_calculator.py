@@ -12,7 +12,7 @@ try:
         get_operation = input("Choose an operation: add, subtract, multiply, divide: ")
 
         # Check if the operation is valid using try
-        if get_operation not in ['add', 'subtract', 'multiply', 'divide'].upper():
+        if get_operation.lower() not in ['add', 'subtract', 'multiply', 'divide']:
             print("Choose within the four operation. Please try again.")
             continue
 
@@ -33,7 +33,7 @@ try:
         # Ask user if they want to continue
         get_continue = input("Do you want to continue? (Y/N): ")
 
-        if get_continue.lower() != 'Y':
+        if get_continue.lower() != 'y':
             break
 
 # Check if the input is a number using ValueError
